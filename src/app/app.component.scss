@@ -1,0 +1,54 @@
+h4 {
+  text-align: center;
+  font-weight: 100;
+  transform: rotate(-40deg);
+  padding-top: 40px;
+  transition: 0.5s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.5) rotate(-40deg);
+  }
+}
+
+div.content {
+  width: 800px;
+  margin: auto;
+  padding: 50px 0;
+
+  @media only screen and (max-width: 900px) {
+    width: 95%;
+  }
+
+  mat-form-field {
+    width: 100%;
+  }
+
+  p.check-box {
+    font-size: 20px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+
+    mat-icon {
+      cursor: pointer;
+    }
+  }
+}
+
+mat-icon {
+  vertical-align: middle;
+}
+
+p.with-love {
+  font-size: 12px;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  margin: 0;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
